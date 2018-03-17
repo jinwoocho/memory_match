@@ -1,0 +1,207 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<title>Document</title>-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<script src="https://code.jquery.com/jquery-3.1.0.js"></script>-->
+    <!--<link type="text/css" rel="stylesheet" href="style.css">-->
+    <!--<script src="javascript.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<header class="jumbotron text-center">-->
+
+<!--</header>-->
+<!--<div id="game_body">-->
+    <!--<div class="col-sm-2" id="stats">-->
+        <!--<div id="game_played">-->
+            <!--<div class="label">-->
+                <!--Game Played-->
+            <!--</div>-->
+            <!--<div class="value">-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div id="attempts">-->
+            <!--<div class="label">-->
+                <!--Attempts-->
+            <!--</div>-->
+            <!--<div class="value">-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div id="accuracy">-->
+            <!--<div class="label">-->
+                <!--Accuracy-->
+            <!--</div>-->
+            <!--<div class="value">-->
+
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-sm-8" id="game_area">-->
+
+    <!--</div>-->
+    <!--<div class="col-sm-2">-->
+
+    <!--</div>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>memory_match_C4.17</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse" id="header">
+    <div class="container-fluid">
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+        <a class="navbar-brand" href="#"> <img src="images/wraith1.gif-c200"/> </a>
+        <h1 class="text-center"><img src="images/starcraftLogo.png" height="153" width="705"/></h1>
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse" id="myNavbar">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li class="active"><a href="#">Home</a></li>-->
+                <!--<li><a href="#">About</a></li>-->
+                <!--<li><a href="#">Projects</a></li>-->
+                <!--<li><a href="#">Contact</a></li>-->
+            <!--</ul>-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <a class="navbar_right" href="#"> <img src="images/logo.gif"/> </a>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content" id="mainBody">
+        <div class="col-sm-2 col-xs-12 sidenav" >
+            <div id="leftNav">
+                <div class="left_divs" id="game_played">
+                    <div class="label"><p>Game Played</p></div>
+                    <div class="value game_played">0</div>
+                </div>
+                <div class="left_divs" id="attempts">
+                    <div class="label"><p>Attempts</p></div>
+                    <div class="value attempts">0</div>
+                </div>
+                <div class="left_divs" id="accuracy">
+                    <div class="label"><p>Accuracy</p></div>
+                    <div class="value accuracy">0%</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8 col-xs-12 text-left" id="gameArea">
+
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/zergOne.png" alt="zergOne"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/zergOne.png" alt="zergOne"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/zergTwo.png" alt="zergTwo"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/zergTwo.png" alt="zergTwo"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/zergThree.png" alt="zergThree"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/zergThree.png" alt="zergThree"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/terranOne.png" alt="terranOne"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/terranOne.png" alt="terranOne"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/terranTwo.png" alt="terranTwo"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/terranTwo.png" alt="terranTwo"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/terranThree.png" alt="terranThree"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/terranThree.png" alt="terranThree"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/protossOne.png" alt="protossOne"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/protossOne.png" alt="protossOne"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/protossTwo.png" alt="protossTwo"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/protossTwo.png" alt="protossTwo"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/protossThree.png" alt="protossThree"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+            <div class="card col-xs-2">
+                <div class="front"><img src="images/protossThree.png" alt="protossThree"/></div>
+                <div class="back"><img src="images/SCbackcard.jpg "/></div>
+            </div>
+
+        </div>
+        <div class="col-sm-2 col-xs-12 sidenav">
+            <div id="rightNav">
+                <div class="well rightButton" id="resetButton">
+                    <div><p>reset button</p></div>
+                </div>
+                <div class="well rightButton" id="mixAgain">
+                    <div><p>Mix Card</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+</footer>
+
+</body>
+</html>
